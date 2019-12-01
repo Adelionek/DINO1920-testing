@@ -189,6 +189,24 @@ public class MegaMnozenieNGTest {
         String result = MegaMnozenie.mnozenie(a, b);
         assertEquals(result, expResult);
     }
+
+        @Test
+        public void testMnozenie99() {
+            String s = "1.5";
+            String s2 = "1.5";
+            String expected = "2.25";
+            String result = MegaMnozenie.mnozenie(s,s2);
+            assertEquals(result, expected);
+        }
+
+        @Test
+        public void testMnozenie100() {
+            String s = "2";
+            String s2 = "2.5";
+            String expected = "5";
+            String result = MegaMnozenie.mnozenie(s,s2);
+            assertEquals(result, expected);
+        }
 }
 
 
